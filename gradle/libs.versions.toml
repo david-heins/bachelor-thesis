@@ -1,0 +1,27 @@
+[versions]
+arrow = "1.2.0-RC"
+clikt = "3.5.4"
+jvm = "1.9.0"
+kafka = "3.5.0"
+kotlinx-coroutines-core = "1.7.1"
+ksp = "1.9.0-1.0.11"
+rabbitmq-amqp = "5.18.0"
+rabbitmq-stream = "0.10.0"
+slf4j = "2.0.7"
+
+[libraries]
+arrow-core = { module = "io.arrow-kt:arrow-core", version.ref = "arrow" }
+arrow-fx-coroutines = { module = "io.arrow-kt:arrow-fx-coroutines", version.ref = "arrow" }
+arrow-optics = { module = "io.arrow-kt:arrow-optics", version.ref = "arrow" }
+arrow-optics-ksp-plugin = { module = "io.arrow-kt:arrow-optics-ksp-plugin", version.ref = "arrow" }
+clikt = { module = "com.github.ajalt.clikt:clikt", version.ref = "clikt" }
+kafka-clients = { module = "org.apache.kafka:kafka-clients", version.ref = "kafka" }
+kafka-streams = { module = "org.apache.kafka:kafka-streams", version.ref = "kafka" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines-core" }
+rabbitmq-amqp = { module = "com.rabbitmq:amqp-client", version.ref = "rabbitmq-amqp" }
+rabbitmq-stream = { module = "com.rabbitmq:stream-client", version.ref = "rabbitmq-stream" }
+slf4j = { module = "org.slf4j:slf4j-simple", version.ref = "slf4j" }
+
+[plugins]
+jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "jvm" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }

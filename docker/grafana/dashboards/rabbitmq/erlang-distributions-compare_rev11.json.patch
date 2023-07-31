@@ -1,0 +1,40 @@
+diff --git a/docker/grafana/dashboards/rabbitmq/erlang-distributions-compare_rev11.json b/docker/grafana/dashboards/rabbitmq/erlang-distributions-compare_rev11.json
+index 61826d5ff1e7e9ad..7796e87457cdfa90 100644
+--- a/docker/grafana/dashboards/rabbitmq/erlang-distributions-compare_rev11.json
++++ b/docker/grafana/dashboards/rabbitmq/erlang-distributions-compare_rev11.json
+@@ -1630,7 +1630,7 @@
+       "yBucketSize": null
+     }
+   ],
+-  "refresh": "15s",
++  "refresh": "5s",
+   "schemaVersion": 20,
+   "style": "dark",
+   "tags": [
+@@ -1823,11 +1823,18 @@
+   },
+   "timepicker": {
+     "refresh_intervals": [
++      "5s",
++      "10s",
+       "15s",
+       "30s",
+       "1m",
+       "5m",
+-      "10m"
++      "10m",
++      "15m",
++      "30m",
++      "1h",
++      "2h",
++      "1d"
+     ],
+     "time_options": [
+       "5m",
+@@ -1855,4 +1862,4 @@
+       "pluginName": "Prometheus"
+     }
+   ]
+-}
+\ No newline at end of file
++}

@@ -1,0 +1,25 @@
+micronaut:
+  server:
+    port: 8801
+akhq:
+  clients-defaults:
+    admin:
+      properties:
+        default.api.timeout.ms: 30000
+    consumer:
+      properties:
+        default.api.timeout.ms: 30000
+    producer:
+      properties:
+        default.api.timeout.ms: 30000
+  connections:
+    kafka:
+      properties:
+        bootstrap.servers: "kafka-broker:29092"
+      ui-options:
+        topic:
+          default-view: ALL
+          show-all-consumer-groups: true
+        topic-data:
+          sort: NEWEST
+          date-time-format: ISO

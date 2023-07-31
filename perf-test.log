@@ -1,0 +1,141 @@
+
+Kafka (1 000 000)
+
+Created topic perf-test.
+1000000 records sent, 355618.776671 records/sec (10.85 MB/sec), 4.37 ms avg latency, 321.00 ms max latency, 4 ms 50th, 9 ms 95th, 11 ms 99th, 18 ms 99.9th.
+start.time, end.time, data.consumed.in.MB, MB.sec, data.consumed.in.nMsg, nMsg.sec, rebalance.time.ms, fetch.time.ms, fetch.MB.sec, fetch.nMsg.sec
+2023-07-26 18:57:53:554, 2023-07-26 18:57:57:387, 30.5176, 7.9618, 1000000, 260892.2515, 3328, 505, 60.4308, 1980198.0198
+
+Kafka (50 000 000)
+
+Created topic perf-test.
+2994430 records sent, 598886.0 records/sec (18.28 MB/sec), 4.9 ms avg latency, 334.0 ms max latency.
+4015976 records sent, 803195.2 records/sec (24.51 MB/sec), 2.4 ms avg latency, 20.0 ms max latency.
+4386566 records sent, 877313.2 records/sec (26.77 MB/sec), 1.1 ms avg latency, 22.0 ms max latency.
+4964769 records sent, 992953.8 records/sec (30.30 MB/sec), 0.8 ms avg latency, 10.0 ms max latency.
+5128840 records sent, 1025768.0 records/sec (31.30 MB/sec), 1.0 ms avg latency, 19.0 ms max latency.
+4847008 records sent, 969401.6 records/sec (29.58 MB/sec), 0.8 ms avg latency, 12.0 ms max latency.
+4701942 records sent, 940388.4 records/sec (28.70 MB/sec), 0.9 ms avg latency, 14.0 ms max latency.
+3979645 records sent, 795929.0 records/sec (24.29 MB/sec), 59.3 ms avg latency, 1004.0 ms max latency.
+3660252 records sent, 732050.4 records/sec (22.34 MB/sec), 59.1 ms avg latency, 992.0 ms max latency.
+4317012 records sent, 863402.4 records/sec (26.35 MB/sec), 0.7 ms avg latency, 10.0 ms max latency.
+4985378 records sent, 997075.6 records/sec (30.43 MB/sec), 1.2 ms avg latency, 19.0 ms max latency.
+50000000 records sent, 875074.381322 records/sec (26.71 MB/sec), 10.19 ms avg latency, 1004.00 ms max latency, 1 ms 50th, 7 ms 95th, 466 ms 99th, 965 ms 99.9th.
+start.time, end.time, data.consumed.in.MB, MB.sec, data.consumed.in.nMsg, nMsg.sec, rebalance.time.ms, fetch.time.ms, fetch.MB.sec, fetch.nMsg.sec
+2023-07-26 18:59:03:417, 2023-07-26 18:59:15:202, 1525.8789, 129.4764, 50000000, 4242681.3746, 3335, 8450, 180.5774, 5917159.7633
+
+RabbitMQ (1 000 000)
+
+id: test-185918-204, starting consumer #0
+id: test-185918-204, starting consumer #0, channel #0
+id: test-185918-204, starting producer #0
+id: test-185918-204, starting producer #0, channel #0
+id: test-185918-204, time 1.001 s, sent: 9458 msg/s, received: 9356 msg/s, min/median/75th/95th/99th consumer latency: 2530/9632/15090/94743/100907 µs
+id: test-185918-204, time 2.000 s, sent: 18936 msg/s, received: 17927 msg/s, min/median/75th/95th/99th consumer latency: 5417/31927/39096/51111/54116 µs
+id: test-185918-204, time 3.001 s, sent: 58880 msg/s, received: 18134 msg/s, min/median/75th/95th/99th consumer latency: 33441/174828/270620/400468/423194 µs
+id: test-185918-204, time 4.001 s, sent: 154631 msg/s, received: 18514 msg/s, min/median/75th/95th/99th consumer latency: 438683/856045/1020884/1186153/1219535 µs
+id: test-185918-204, time 5.000 s, sent: 25041 msg/s, received: 25683 msg/s, min/median/75th/95th/99th consumer latency: 1242064/1579248/1787338/1945882/1954905 µs
+id: test-185918-204, time 6.000 s, sent: 40467 msg/s, received: 25833 msg/s, min/median/75th/95th/99th consumer latency: 1984201/2378506/2550335/2731147/2757410 µs
+id: test-185918-204, time 7.000 s, sent: 22095 msg/s, received: 26381 msg/s, min/median/75th/95th/99th consumer latency: 2768585/3099047/3258501/3363249/3395244 µs
+id: test-185918-204, time 8.000 s, sent: 36053 msg/s, received: 25110 msg/s, min/median/75th/95th/99th consumer latency: 3408395/3849679/4072119/4283802/4322205 µs
+id: test-185918-204, time 9.000 s, sent: 0 msg/s, received: 26315 msg/s, min/median/75th/95th/99th consumer latency: 4338598/4726705/4932914/5117877/5153454 µs
+id: test-185918-204, time 10.000 s, sent: 35351 msg/s, received: 25600 msg/s, min/median/75th/95th/99th consumer latency: 5171946/5679853/5885577/6045186/6083616 µs
+id: test-185918-204, time 11.000 s, sent: 27959 msg/s, received: 26289 msg/s, min/median/75th/95th/99th consumer latency: 6105077/6447224/6701752/6880915/6912116 µs
+id: test-185918-204, time 12.000 s, sent: 35352 msg/s, received: 25576 msg/s, min/median/75th/95th/99th consumer latency: 6414885/6785103/7008624/7154682/7191517 µs
+id: test-185918-204, time 13.000 s, sent: 18394 msg/s, received: 26146 msg/s, min/median/75th/95th/99th consumer latency: 6816178/7094170/7319529/7518380/7551029 µs
+id: test-185918-204, time 14.000 s, sent: 36088 msg/s, received: 25947 msg/s, min/median/75th/95th/99th consumer latency: 6897847/7238834/7340461/7463372/7490601 µs
+id: test-185918-204, time 15.000 s, sent: 0 msg/s, received: 27059 msg/s, min/median/75th/95th/99th consumer latency: 6491372/6945018/7113307/7648667/7680528 µs
+id: test-185918-204, time 16.000 s, sent: 33846 msg/s, received: 26873 msg/s, min/median/75th/95th/99th consumer latency: 6467889/7183640/7437932/7612748/7651233 µs
+id: test-185918-204, time 17.000 s, sent: 30196 msg/s, received: 26353 msg/s, min/median/75th/95th/99th consumer latency: 6384827/7157881/7405737/7577383/7607684 µs
+id: test-185918-204, time 18.000 s, sent: 18394 msg/s, received: 27293 msg/s, min/median/75th/95th/99th consumer latency: 6459188/6877976/7094251/7292034/7332275 µs
+id: test-185918-204, time 19.000 s, sent: 36089 msg/s, received: 26205 msg/s, min/median/75th/95th/99th consumer latency: 6690529/6991664/7104019/7254800/7295899 µs
+id: test-185918-204, time 20.000 s, sent: 27959 msg/s, received: 26201 msg/s, min/median/75th/95th/99th consumer latency: 6716350/7159843/7275500/7366115/7400684 µs
+id: test-185918-204, time 21.000 s, sent: 18412 msg/s, received: 27352 msg/s, min/median/75th/95th/99th consumer latency: 6694421/6954565/7123298/7316873/7344801 µs
+id: test-185918-204, time 22.000 s, sent: 47136 msg/s, received: 25538 msg/s, min/median/75th/95th/99th consumer latency: 6266032/6677873/7111717/7325352/7356059 µs
+id: test-185918-204, time 23.000 s, sent: 16938 msg/s, received: 26834 msg/s, min/median/75th/95th/99th consumer latency: 6340563/6995998/7201053/7377394/7407255 µs
+id: test-185918-204, time 24.000 s, sent: 35352 msg/s, received: 26886 msg/s, min/median/75th/95th/99th consumer latency: 6686225/6931406/7147452/7319759/7365108 µs
+id: test-185918-204, time 25.000 s, sent: 18394 msg/s, received: 25593 msg/s, min/median/75th/95th/99th consumer latency: 6331060/6831326/7158439/7353639/7380085 µs
+id: test-185918-204, time 26.000 s, sent: 29459 msg/s, received: 26277 msg/s, min/median/75th/95th/99th consumer latency: 6499294/7094638/7324466/7521235/7564085 µs
+id: test-185918-204, time 27.000 s, sent: 17676 msg/s, received: 26110 msg/s, min/median/75th/95th/99th consumer latency: 6634978/6996352/7264910/7448508/7478240 µs
+id: test-185918-204, time 28.000 s, sent: 35316 msg/s, received: 27181 msg/s, min/median/75th/95th/99th consumer latency: 6434627/7026935/7274617/7458729/7489966 µs
+id: test-185918-204, time 29.000 s, sent: 16939 msg/s, received: 27343 msg/s, min/median/75th/95th/99th consumer latency: 6735793/6997207/7212477/7388023/7423683 µs
+id: test-185918-204, time 30.000 s, sent: 35352 msg/s, received: 27269 msg/s, min/median/75th/95th/99th consumer latency: 6630252/7093069/7207629/7300785/7335928 µs
+id: test-185918-204, time 31.000 s, sent: 18394 msg/s, received: 27151 msg/s, min/median/75th/95th/99th consumer latency: 6692095/6983197/7096219/7232870/7260511 µs
+id: test-185918-204, time 32.000 s, sent: 36088 msg/s, received: 26702 msg/s, min/median/75th/95th/99th consumer latency: 6196312/7138747/7260672/7345785/7371327 µs
+id: test-185918-204, time 33.000 s, sent: 9841 msg/s, received: 26833 msg/s, min/median/75th/95th/99th consumer latency: 6247334/6702896/6945451/7134809/7168131 µs
+id: test-185918-204, time 34.000 s, sent: 0 msg/s, received: 28461 msg/s, min/median/75th/95th/99th consumer latency: 6488113/6740376/6891579/7090159/7216014 µs
+id: test-185918-204, time 35.000 s, sent: 0 msg/s, received: 28093 msg/s, min/median/75th/95th/99th consumer latency: 6433754/6813981/6927149/7028766/7044447 µs
+id: test-185918-204, time 36.000 s, sent: 0 msg/s, received: 27434 msg/s, min/median/75th/95th/99th consumer latency: 6392453/6703702/6840481/7067699/7096988 µs
+id: test-185918-204, time 37.000 s, sent: 0 msg/s, received: 27234 msg/s, min/median/75th/95th/99th consumer latency: 6473991/6794641/6944071/7057301/7085815 µs
+id: test-185918-204, time 38.000 s, sent: 0 msg/s, received: 27891 msg/s, min/median/75th/95th/99th consumer latency: 6056308/6510329/6849800/7048675/7088746 µs
+id: test-185918-204, time 39.000 s, sent: 0 msg/s, received: 26732 msg/s, min/median/75th/95th/99th consumer latency: 6154096/6700353/6977891/7155685/7193073 µs
+test stopped (Producer reached message limit, Consumer reached message limit)
+id: test-185918-204, sending rate avg: 25522 msg/s
+id: test-185918-204, receiving rate avg: 25522 msg/s
+id: test-185918-204, consumer latency min/median/75th/95th/99th 7069/6873565/7127409/7362226/7533919 µs
+
+RabbitMQ Stream (60s)
+
+Starting producer
+1, published 125558 msg/s, confirmed 125558 msg/s, consumed 57079 msg/s, latency median/75th/95th/99th 241/283/384/401 ms, chunk size 78
+2, published 249179 msg/s, confirmed 248579 msg/s, consumed 100749 msg/s, latency median/75th/95th/99th 621/688/789/789 ms, chunk size 97
+3, published 332782 msg/s, confirmed 327483 msg/s, consumed 127486 msg/s, latency median/75th/95th/99th 1107/1242/1309/1309 ms, chunk size 118
+4, published 369428 msg/s, confirmed 369228 msg/s, consumed 167372 msg/s, latency median/75th/95th/99th 1544/1678/1678/1745 ms, chunk size 144
+5, published 372474 msg/s, confirmed 373714 msg/s, consumed 87555 msg/s, latency median/75th/95th/99th 2013/2013/2483/2483 ms, chunk size 148
+6, published 464769 msg/s, confirmed 459724 msg/s, consumed 113961 msg/s, latency median/75th/95th/99th 2819/2819/3087/3087 ms, chunk size 158
+7, published 449198 msg/s, confirmed 449144 msg/s, consumed 196342 msg/s, latency median/75th/95th/99th 3355/3355/3490/3490 ms, chunk size 179
+8, published 477645 msg/s, confirmed 483603 msg/s, consumed 95492 msg/s, latency median/75th/95th/99th 4027/4161/4161/4161 ms, chunk size 180
+9, published 467818 msg/s, confirmed 461819 msg/s, consumed 491074 msg/s, latency median/75th/95th/99th 4161/4161/4429/4429 ms, chunk size 246
+10, published 490349 msg/s, confirmed 494480 msg/s, consumed 625718 msg/s, latency median/75th/95th/99th 3758/3758/3892/3892 ms, chunk size 324
+11, published 478946 msg/s, confirmed 476871 msg/s, consumed 863785 msg/s, latency median/75th/95th/99th 3087/3221/3490/3624 ms, chunk size 423
+12, published 492890 msg/s, confirmed 491907 msg/s, consumed 949125 msg/s, latency median/75th/95th/99th 2349/2483/2751/2751 ms, chunk size 521
+13, published 446495 msg/s, confirmed 455408 msg/s, consumed 644413 msg/s, latency median/75th/95th/99th 1678/1879/1946/2013 ms, chunk size 574
+14, published 497191 msg/s, confirmed 492091 msg/s, consumed 912203 msg/s, latency median/75th/95th/99th 1107/1309/1443/1510 ms, chunk size 621
+15, published 598557 msg/s, confirmed 599697 msg/s, consumed 880399 msg/s, latency median/75th/95th/99th 24/218/402/436 ms, chunk size 693
+16, published 629864 msg/s, confirmed 629101 msg/s, consumed 627340 msg/s, latency median/75th/95th/99th 16/20/26/31 ms, chunk size 742
+17, published 610549 msg/s, confirmed 609168 msg/s, consumed 609172 msg/s, latency median/75th/95th/99th 16/22/30/38 ms, chunk size 789
+18, published 660557 msg/s, confirmed 656781 msg/s, consumed 656777 msg/s, latency median/75th/95th/99th 15/20/24/28 ms, chunk size 839
+19, published 515945 msg/s, confirmed 515907 msg/s, consumed 515907 msg/s, latency median/75th/95th/99th 19/25/42/63 ms, chunk size 875
+20, published 655439 msg/s, confirmed 655353 msg/s, consumed 649448 msg/s, latency median/75th/95th/99th 18/21/24/27 ms, chunk size 923
+21, published 652882 msg/s, confirmed 656603 msg/s, consumed 662514 msg/s, latency median/75th/95th/99th 16/21/25/29 ms, chunk size 966
+22, published 643192 msg/s, confirmed 639475 msg/s, consumed 633619 msg/s, latency median/75th/95th/99th 16/21/24/27 ms, chunk size 1005
+23, published 661712 msg/s, confirmed 661810 msg/s, consumed 666898 msg/s, latency median/75th/95th/99th 15/20/25/42 ms, chunk size 1040
+24, published 583467 msg/s, confirmed 583413 msg/s, consumed 580082 msg/s, latency median/75th/95th/99th 18/22/38/40 ms, chunk size 1060
+25, published 597900 msg/s, confirmed 597860 msg/s, consumed 597860 msg/s, latency median/75th/95th/99th 19/23/40/50 ms, chunk size 1093
+26, published 654993 msg/s, confirmed 655009 msg/s, consumed 655009 msg/s, latency median/75th/95th/99th 15/21/25/29 ms, chunk size 1123
+27, published 652223 msg/s, confirmed 652276 msg/s, consumed 656376 msg/s, latency median/75th/95th/99th 16/20/26/32 ms, chunk size 1158
+28, published 657549 msg/s, confirmed 657525 msg/s, consumed 657525 msg/s, latency median/75th/95th/99th 16/21/25/29 ms, chunk size 1190
+29, published 651025 msg/s, confirmed 651073 msg/s, consumed 646977 msg/s, latency median/75th/95th/99th 18/21/26/29 ms, chunk size 1224
+30, published 647494 msg/s, confirmed 647398 msg/s, consumed 646078 msg/s, latency median/75th/95th/99th 18/22/26/31 ms, chunk size 1257
+31, published 603135 msg/s, confirmed 608091 msg/s, consumed 615263 msg/s, latency median/75th/95th/99th 18/22/27/44 ms, chunk size 1286
+32, published 622629 msg/s, confirmed 617769 msg/s, consumed 611918 msg/s, latency median/75th/95th/99th 16/22/27/40 ms, chunk size 1316
+33, published 588445 msg/s, confirmed 588349 msg/s, consumed 592445 msg/s, latency median/75th/95th/99th 18/22/27/63 ms, chunk size 1343
+34, published 630164 msg/s, confirmed 630212 msg/s, consumed 625006 msg/s, latency median/75th/95th/99th 15/20/25/42 ms, chunk size 1366
+35, published 610453 msg/s, confirmed 612194 msg/s, consumed 615566 msg/s, latency median/75th/95th/99th 16/22/27/40 ms, chunk size 1382
+36, published 646494 msg/s, confirmed 644681 msg/s, consumed 646503 msg/s, latency median/75th/95th/99th 16/20/25/27 ms, chunk size 1407
+37, published 639883 msg/s, confirmed 639927 msg/s, consumed 635827 msg/s, latency median/75th/95th/99th 16/21/25/30 ms, chunk size 1431
+38, published 655355 msg/s, confirmed 657707 msg/s, consumed 657707 msg/s, latency median/75th/95th/99th 16/21/25/29 ms, chunk size 1456
+39, published 664634 msg/s, confirmed 662236 msg/s, consumed 670735 msg/s, latency median/75th/95th/99th 16/20/26/29 ms, chunk size 1481
+40, published 675415 msg/s, confirmed 675415 msg/s, consumed 671020 msg/s, latency median/75th/95th/99th 15/20/25/28 ms, chunk size 1502
+41, published 642323 msg/s, confirmed 647158 msg/s, consumed 647158 msg/s, latency median/75th/95th/99th 18/21/25/28 ms, chunk size 1522
+42, published 620675 msg/s, confirmed 615884 msg/s, consumed 615884 msg/s, latency median/75th/95th/99th 16/21/29/42 ms, chunk size 1540
+43, published 670865 msg/s, confirmed 670919 msg/s, consumed 670919 msg/s, latency median/75th/95th/99th 15/19/26/38 ms, chunk size 1560
+44, published 624354 msg/s, confirmed 625305 msg/s, consumed 621205 msg/s, latency median/75th/95th/99th 18/22/27/30 ms, chunk size 1581
+45, published 641387 msg/s, confirmed 640434 msg/s, consumed 652721 msg/s, latency median/75th/95th/99th 15/20/26/31 ms, chunk size 1600
+46, published 672875 msg/s, confirmed 678890 msg/s, consumed 670691 msg/s, latency median/75th/95th/99th 15/20/24/28 ms, chunk size 1618
+47, published 642351 msg/s, confirmed 636257 msg/s, consumed 632157 msg/s, latency median/75th/95th/99th 15/20/26/44 ms, chunk size 1635
+48, published 667305 msg/s, confirmed 671193 msg/s, consumed 669209 msg/s, latency median/75th/95th/99th 16/20/24/26 ms, chunk size 1656
+49, published 653017 msg/s, confirmed 653220 msg/s, consumed 659401 msg/s, latency median/75th/95th/99th 16/20/25/27 ms, chunk size 1674
+50, published 682924 msg/s, confirmed 682808 msg/s, consumed 674519 msg/s, latency median/75th/95th/99th 15/19/23/27 ms, chunk size 1691
+51, published 675196 msg/s, confirmed 671205 msg/s, consumed 679405 msg/s, latency median/75th/95th/99th 16/21/24/26 ms, chunk size 1709
+52, published 657395 msg/s, confirmed 657463 msg/s, consumed 653363 msg/s, latency median/75th/95th/99th 15/21/25/27 ms, chunk size 1727
+53, published 657821 msg/s, confirmed 657849 msg/s, consumed 657849 msg/s, latency median/75th/95th/99th 16/20/24/28 ms, chunk size 1743
+54, published 655513 msg/s, confirmed 658915 msg/s, consumed 663016 msg/s, latency median/75th/95th/99th 16/21/26/30 ms, chunk size 1760
+55, published 658358 msg/s, confirmed 654899 msg/s, consumed 654899 msg/s, latency median/75th/95th/99th 15/20/25/28 ms, chunk size 1771
+56, published 674649 msg/s, confirmed 674697 msg/s, consumed 674697 msg/s, latency median/75th/95th/99th 15/20/24/28 ms, chunk size 1784
+57, published 643538 msg/s, confirmed 643454 msg/s, consumed 645502 msg/s, latency median/75th/95th/99th 16/22/25/28 ms, chunk size 1798
+58, published 658795 msg/s, confirmed 658795 msg/s, consumed 659348 msg/s, latency median/75th/95th/99th 15/20/25/30 ms, chunk size 1810
+59, published 610213 msg/s, confirmed 615118 msg/s, consumed 612515 msg/s, latency median/75th/95th/99th 16/21/35/48 ms, chunk size 1817
+60, published 650267 msg/s, confirmed 649547 msg/s, consumed 645447 msg/s, latency median/75th/95th/99th 16/21/24/27 ms, chunk size 1832
+
+Summary: published 585988 msg/s, confirmed 585823 msg/s, consumed 585754 msg/s, latency 95th 24 ms, chunk size 1832

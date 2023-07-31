@@ -1,0 +1,40 @@
+diff --git a/docker/grafana/dashboards/rabbitmq/rabbitmq-overview_rev12.json b/docker/grafana/dashboards/rabbitmq/rabbitmq-overview_rev12.json
+index d69c98a2e8dac82e..e27b447243290636 100644
+--- a/docker/grafana/dashboards/rabbitmq/rabbitmq-overview_rev12.json
++++ b/docker/grafana/dashboards/rabbitmq/rabbitmq-overview_rev12.json
+@@ -8095,7 +8095,7 @@
+       "type": "timeseries"
+     }
+   ],
+-  "refresh": "15s",
++  "refresh": "5s",
+   "schemaVersion": 34,
+   "style": "dark",
+   "tags": [
+@@ -8182,11 +8182,18 @@
+   },
+   "timepicker": {
+     "refresh_intervals": [
++      "5s",
++      "10s",
+       "15s",
+       "30s",
+       "1m",
+       "5m",
+-      "10m"
++      "10m",
++      "15m",
++      "30m",
++      "1h",
++      "2h",
++      "1d"
+     ],
+     "time_options": [
+       "5m",
+@@ -8206,4 +8213,4 @@
+   "version": 20220805,
+   "weekStart": "",
+   "gnetId": 10991
+-}
+\ No newline at end of file
++}

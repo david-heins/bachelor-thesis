@@ -1,0 +1,23 @@
+default:
+  image: gradle:alpine
+  before_script:
+    - GRADLE_USER_HOME="$(pwd)/.gradle"
+    - export GRADLE_USER_HOME
+  cache:
+    paths:
+      - build
+      - .gradle
+    key: "$CI_COMMIT_REF_SLUG"
+    policy: pull-push
+
+stages:
+  - build
+  - test
+
+build:
+  stage: build
+  script: gradle --build-cache assemble
+
+test:
+  stage: test
+  script: gradle check

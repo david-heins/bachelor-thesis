@@ -1,0 +1,40 @@
+diff --git a/docker/grafana/dashboards/rabbitmq/erlang-memory-allocators_rev5.json b/docker/grafana/dashboards/rabbitmq/erlang-memory-allocators_rev5.json
+index 6d1a595feeb5f350..2ee3106de34f04ae 100644
+--- a/docker/grafana/dashboards/rabbitmq/erlang-memory-allocators_rev5.json
++++ b/docker/grafana/dashboards/rabbitmq/erlang-memory-allocators_rev5.json
+@@ -2248,7 +2248,7 @@
+       }
+     }
+   ],
+-  "refresh": "15s",
++  "refresh": "5s",
+   "schemaVersion": 22,
+   "style": "dark",
+   "tags": [
+@@ -2371,11 +2371,18 @@
+   },
+   "timepicker": {
+     "refresh_intervals": [
++      "5s",
++      "10s",
+       "15s",
+       "30s",
+       "1m",
+       "5m",
+-      "10m"
++      "10m",
++      "15m",
++      "30m",
++      "1h",
++      "2h",
++      "1d"
+     ],
+     "time_options": [
+       "5m",
+@@ -2403,4 +2410,4 @@
+       "pluginName": "Prometheus"
+     }
+   ]
+-}
+\ No newline at end of file
++}

@@ -1,0 +1,38 @@
+diff --git a/docker/grafana/dashboards/prometheus/prometheus-2-0-overview_rev2.json b/docker/grafana/dashboards/prometheus/prometheus-2-0-overview_rev2.json
+index f34c2b907f9566cd..7a99fb6377c7d71b 100644
+--- a/docker/grafana/dashboards/prometheus/prometheus-2-0-overview_rev2.json
++++ b/docker/grafana/dashboards/prometheus/prometheus-2-0-overview_rev2.json
+@@ -76,7 +76,7 @@
+   "hideControls": false,
+   "id": null,
+   "links": [],
+-  "refresh": "30s",
++  "refresh": "5s",
+   "rows": [
+     {
+       "collapse": false,
+@@ -2893,6 +2893,12 @@
+   "tags": [],
+   "templating": {
+     "list": [
++      {
++        "type": "datasource",
++        "name": "DS_THEMIS",
++        "label": "datasource",
++        "query": "prometheus"
++      },
+       {
+         "allValue": null,
+         "current": {},
+@@ -3010,9 +3016,11 @@
+     "refresh_intervals": [
+       "5s",
+       "10s",
++      "15s",
+       "30s",
+       "1m",
+       "5m",
++      "10m",
+       "15m",
+       "30m",
+       "1h",
